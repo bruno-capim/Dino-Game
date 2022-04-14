@@ -1,0 +1,80 @@
+#container{
+	width:950px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 10px;
+}
+
+#fundoGame {
+	width:950px;
+	height:630px;
+	background-image:url(../img/background.png);
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#inicio {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+	border-radius: 10px;
+	background-color: rgb(201, 206, 211);
+}
+
+#jogador {
+	width:60px;
+	height:60px;
+	position:absolute;
+	left:100px;
+	top: 550px;
+	background-image:url(../img/dino.png);
+}
+
+#cacto {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 689px;
+	top: 550px;
+	background-image:url(../img/cactus.png);
+	
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+	color: black;
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../img/disparo.png);
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:rgb(201, 206, 211);
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
