@@ -60,13 +60,32 @@ function clicajogador()
 	//Ação da tecla
 	if (jogo.pressionou[TECLA.S]) 
 	{
-		$("#jogador").css("top", 460);
+		//$("#jogador").css("top", 460);
 
-		window.setTimeout(timer, 450)
+		document.getElementById("jogador").animate([
+			// keyframes
+			{ transform: 'translateY(-90px)'}
+		  ], {
+			// timing options
+			duration: 420,
+			iterations: 1
+		  });
+		  
+
+		window.setTimeout(timer, 450);
+
+		$("#cacto").css("top",550);
 
 		function timer()
 		{
-			$("#jogador").css("top", 550);	
+			document.getElementById("jogador").animate([
+				// keyframes
+				{ transform: 'translateY(+3px)'}
+			  ], {
+				// timing options
+				duration: 420,
+				iterations: 1
+			  });
 		}
 	}
 
@@ -80,10 +99,15 @@ function gerarcacto()
 	
 	if (posicaoX<=0) 
 	{			
-		$("#cacto").css("left",875);
-		posicaoY = parseInt(Math.random() * +725);
+		//$("#cacto").css("left",698);
+		posicaoY = parseInt(Math.random() * 950);
 		//$("#cacto").css("left",852);
-		$("#cacto").css("left",posicaoY);
+
+		if(posicaoY > 100)
+		{
+			$("#cacto").css("left",posicaoY);
+			$("#cacto").css("right",+8000);
+		}
 	}
 }//fim da função gera cactos
 
